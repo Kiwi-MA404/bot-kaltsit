@@ -1,0 +1,20 @@
+{
+  "name": "companion",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "QQ 陪伴体 —— 人设 + 记忆 + 时间感，推理走 DSH 本机网关",
+  "main": "src/chat.js",
+  "scripts": {
+    "chat": "node src/chat.js",
+    "verify": "node test/verify-persona.js",
+    "verify:memory": "node test/verify-memory.js",
+    "check": "node test/check-gateway.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}

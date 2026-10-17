@@ -1,0 +1,39 @@
+# ── 运行时数据（含真实聊天记录，绝不可入库）──
+app/data/
+!app/data/README.md
+app/logs/
+*.log
+*.log.old
+app/data/**/*.json
+*.summary-bak-*
+*-pruned.*.json
+
+# ── 配置（含个人 QQ 号与本地 token）──
+app/config.json
+config.json.bak-*
+
+# ── 打包产物 ──
+release/
+*.tar.gz
+*.sha256
+*.zip
+!vendor/napcat/*.zip
+
+# ── 系统 / 编辑器 ──
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*~
+
+# ── 依赖 ──
+node_modules/
+.pnpm-store/
+
+# ── 凭据 ──
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials*
